@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Hills Travel and Trourism</title>
+    <link rel="stylesheet" href="./resources/css/index.css">
+</head>
+<body>
+    <header>Holiday Hills Travel and Trourism</header>
+    <div class="cover">
+        <img src="/resources/images/taxi_services_img.png" alt="">
+        <p>Your Cab is just a call away<br>
+        We are available 24x7</p>
+    </div>
+    <h2 class="subheading">Our services</h2>
+    <figure class="services">
+        <img class="serv_pic" src="/resources/images/flight.png" alt="">
+        <figcaption>Airport Pick up & Drop</figcaption>
+    </figure>
+    <figure class="services">
+        <img class="serv_pic" src="/resources/images/train.png" alt="">
+        <figcaption>Railway Station Pick up & Drop</figcaption>
+    </figure>
+    <figure class="services">
+        <img class="serv_pic" src="/resources/images/destinations.png" alt="">
+        <figcaption>Travel Destinations</figcaption>
+        <a id="top_ten" href="#">Top 10 Destinations</a>
+    </figure>
+    <div id="contact">
+        <h3 class="subheading">Book Now</h3>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="phone">Phone:</label><br>
+            <input type="text" id="phone" name="phone"><br>
+            <label for="origin">From Location:</label><br>
+            <input type="text" id="origin" name="origin"><br>
+            <label for="destination">Destination:</label><br>
+            <input type="text" id="destination" name="destination"><br>
+            <label for="startdate">Date:</label><br>
+            <input type="datetime-local" id="startdate" name="startdate"><br>
+            <input type="radio" id="oneway" name="oneway" value="One Way">
+            <label for="oneway">One Way Trip</label><br>
+            <input type="radio" id="roundtrip" name="roundtrip" value="Round Trip">
+            <label for="roundtrip">Round Trip</label><br>
+            <label for="returndate">Return Date:</label><br>
+            <input type="datetime-local" id="returndate" name="returndate"><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <div id="whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=+971586518398&text=Hi, I Want to book a taxi" target="_blank"><img class="icon" src="/resources/images/whatsapp.png" alt=""></a>
+        </div>
+        <div id="call">
+            <a href="tel:+971586518398" target="_blank"><img class="icon" src="/resources/images/call.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>
