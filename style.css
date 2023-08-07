@@ -40,7 +40,7 @@ header {
     padding-top: 110px;
     font-size: 3em;
     font-weight: 900;
-    color: yellowgreen;
+    color: teal;
     position: relative;
     z-index: 5;
 }
@@ -51,26 +51,32 @@ header {
     width: 100%;
     color: teal;
 }
-.services {
-    margin: auto;
-    padding: 10px;
-    color: teal;
-    position: relative;
-    display: inline-block;
-    height: 80px;
-    width: 30%;
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
     text-align: center;
 }
 
-.serv_pic {
-    height: 120px;
-    width: auto;
-    padding-top: 5px;
-    float: right;
-    text-indent: 0;
+.services {
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
-figcaption {
+.services .col {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
+
+.services img {
+    height: 150px;
+}
+
+.services p {
     font-size: 1.2em;
     font-weight: 900;
 }
@@ -85,10 +91,18 @@ form {
     position: relative;
     margin-top: 10px;
     padding: 10px;
+    width: 100%;
 }
 
-label, input, button {
+label, input {
     margin: 5px;
+    width: 400px;
+}
+
+#oneway, #roundtrip {
+    position: relative;
+    display: inline-block;
+    width: 10px;
 }
 
 .icon {
@@ -114,6 +128,7 @@ a {
 }
 
 button {
+    margin: 5px;
     height: 30px;
     background-color: teal;
     color: white;
