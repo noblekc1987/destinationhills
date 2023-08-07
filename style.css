@@ -20,8 +20,8 @@ header {
 
 .cover {
     margin-top: 50px;
-    background-color: beige;
-    height: 400px;
+    background: linear-gradient(to bottom, #a0b4ca 0%,#f7b89f7e 100%);
+    height: 340px;
     width: 100%;
     text-align: left;
 }
@@ -32,7 +32,8 @@ header {
     position: absolute;
     right: 0;
     padding: 20px;
-    opacity: 0.75;
+    opacity: 0.6;
+    
 }
 
 .cover p {
@@ -40,7 +41,7 @@ header {
     padding-top: 110px;
     font-size: 3em;
     font-weight: 900;
-    color: teal;
+    color: white;
     position: relative;
     z-index: 5;
 }
@@ -120,12 +121,16 @@ label, input {
     position: fixed;
     top: 90%;
     right: 0;
+    z-index: 10;
 }
 
 #call {
     position: fixed;
     top: 90%;
     right: 70px;
+    z-index: 10;
+    background-color: white;
+    border-radius: 50%;
 }
 
 a {
@@ -140,4 +145,32 @@ button {
     font-weight: 900;
     border-style: none;
     border-radius: 10%;
+}
+
+@media (max-width: 500px) {
+    header {
+        font-size: 1em;
+        font-weight: 800;
+    }
+
+    .cover {
+        height: 250px;
+    }
+
+    .cover img {
+        height: 300px;
+    }
+
+    .cover p {
+        font-size: 1.5em;
+        font-weight: 800;
+    }
+
+    .services .col {
+        width: 100%;
+    }
+
+    label, input {
+        width: 300px;
+    }
 }
