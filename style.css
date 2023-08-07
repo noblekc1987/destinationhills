@@ -79,6 +79,11 @@ header {
 .services p {
     font-size: 1.2em;
     font-weight: 900;
+    color: teal;
+}
+
+article {
+    color: grey;
 }
 
 #top_ten {
